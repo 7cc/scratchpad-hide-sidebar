@@ -1,0 +1,3 @@
+content   scratchpadhidesidebar                             ./
+overlay   chrome://browser/content/scratchpad.xul           chrome://scratchpadhidesidebar/content/scratchpadOverlay.xul appversion<23.0
+overlay   chrome://browser/content/devtools/scratchpad.xul  chrome://scratchpadhidesidebar/content/scratchpadOverlay.xul
