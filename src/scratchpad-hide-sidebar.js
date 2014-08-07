@@ -12,8 +12,19 @@
    *   https://github.com/LouCypher/blank-scratchpad/blob/master/src/scratchpad-blank.js
    */
   function clearInitialText() {
-    Scratchpad.editor.config.value = "";
+    var initialText =
+      Scratchpad.strings.formatStringFromName(
+            "scratchpadIntro1",
+            [ShortcutUtils.prettifyShortcut(document.getElementById("sp-key-run"), true),
+             ShortcutUtils.prettifyShortcut(document.getElementById("sp-key-inspect"), true),
+             ShortcutUtils.prettifyShortcut(document.getElementById("sp-key-display"), true)],
+            3);
+
+    if (Scratchpad.editor.config.value === initialText) {
+      Scratchpad.editor.config.value = "";
+    }
   }
+
   function hideSideBar() {
     Scratchpad.editor.config.extraKeys.Esc = function() {
       this.sidebar.hide() // ignore error massage

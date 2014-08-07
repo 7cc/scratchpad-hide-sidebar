@@ -9,7 +9,7 @@
     <em:name>Scratchpad Hide Sidebar</em:name>
     <em:description>Esc to hide the sidebar opened by Inspect</em:description>
     <em:unpack>false</em:unpack>
-    <em:version>0.1</em:version>
+    <em:version>0.11</em:version>
 
     <em:targetApplication>
       <Description>
